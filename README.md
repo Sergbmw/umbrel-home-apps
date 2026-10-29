@@ -6,7 +6,7 @@
 
 ## Приложения
 
-| | Приложение | Назначение | Особенности |
+| Логотип | Приложение | Назначение | Особенности |
 | --- | --- | --- | --- |
 | <img src="https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png" width="28" height="28" alt="" /> | [Scrypted](serghome-scrypted/) | Камеры и домофоны в системе умного дома | Использует образ Scrypted и сеть хоста. |
 | <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png" width="28" height="28" alt="" /> | [UniFi&#160;Network](serghome-unifi-network/) | Управление устройствами сети UniFi | Пакет для переноса существующего контроллера; необходима подготовка конфигурации и базы данных. |

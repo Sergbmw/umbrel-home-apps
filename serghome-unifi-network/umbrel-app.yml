@@ -4,7 +4,7 @@ name: UniFi Network
 icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png
 tagline: Manage UniFi network devices
 category: networking
-version: "10.6.106"
+version: "10.6.109"
 port: 18444
 requiresHttps: false
 description: >-
@@ -19,5 +19,5 @@ repo: https://github.com/linuxserver/docker-unifi-network-application
 support: https://docs.linuxserver.io/images/docker-unifi-network-application/
 gallery: []
 releaseNotes: >-
-  Initial migration package for the existing UniFi Network installation.
+  Updates UniFi Network to 10.6.109. Back up the controller and database before updating.
 dependencies: []

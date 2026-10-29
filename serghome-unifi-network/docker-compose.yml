@@ -17,7 +17,7 @@ services:
         exec nginx -g 'daemon off;'
     restart: unless-stopped
   server:
-    image: linuxserver/unifi-network-application:10.6.106@sha256:5f5e76c95b5bd4becb0cdb1b96ef53a468e75ca0f7a096ca5c24fc30998b382a
+    image: linuxserver/unifi-network-application:10.6.109@sha256:8389f585c6443af7051b4696a09e4bb5408636da7f99c5a0e5a883595c1d434c
     network_mode: host
     restart: unless-stopped
     env_file:

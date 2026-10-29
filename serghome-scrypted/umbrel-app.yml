@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: serghome-scrypted
+name: Scrypted
+tagline: Home camera and doorbell integration
+icon: https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png
+category: automation
+version: "0.147.0"
+port: 10443
+requiresHttps: true
+description: >-
+  Scrypted connects cameras and doorbells to home automation platforms.
+developer: Scrypted
+website: https://www.scrypted.app
+submitter: Sergey Home Apps
+submission: https://github.com/Sergbmw
+repo: https://github.com/koush/scrypted
+support: https://docs.scrypted.app
+gallery: []
+releaseNotes: >-
+  Initial package for the existing Scrypted installation.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

@@ -1,39 +1,31 @@
 # Umbrel Home Apps
 
-Сообщественный магазин приложений для umbrelOS. Репозиторий содержит конфигурации Docker и описания приложений для домашнего сервера.
+Неофициальный магазин приложений для [umbrelOS](https://umbrel.com/umbrelos).
 
-> **Установка и использование — на свой страх и риск.** Пакеты созданы сообществом и не являются официальными приложениями Umbrel, Scrypted или Ubiquiti. Некоторые из них подготовлены для конкретной установки и требуют предварительной настройки.
+> **Установка и использование — на свой страх и риск.** Перед установкой и обновлением сохраняйте резервные копии данных.
 
 ## Приложения
 
-| Логотип | Приложение | Назначение | Особенности |
-| --- | --- | --- | --- |
-| <img src="https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png" width="28" height="28" alt="" /> | [Scrypted](serghome-scrypted/) | Камеры и домофоны в системе умного дома | Использует образ Scrypted и сеть хоста. |
-| <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png" width="28" height="28" alt="" /> | [UniFi&#160;Network](serghome-unifi-network/) | Управление устройствами сети UniFi | Пакет для переноса существующего контроллера; необходима подготовка конфигурации и базы данных. |
-| <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/png/unifi-protect.png" width="28" height="28" alt="" /> | [UniFi&#160;Protect](serghome-unifi-protect/) | Камеры и видеозаписи | Экспериментальный пакет для подготовленной установки: нужны локальные образы, перенос данных и сетевые настройки. На Intel используются ARM-эмуляция и контейнеры с расширенными правами. |
+| Логотип | Приложение | Описание |
+| --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png" width="28" height="28" alt="" /> | [Scrypted](serghome-scrypted/) | Камеры и домофоны для умного дома. |
+| <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png" width="28" height="28" alt="" /> | [UniFi&#160;Network](serghome-unifi-network/) | Управление сетью UniFi; требует подготовки данных контроллера. |
+| <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/png/unifi-protect.png" width="28" height="28" alt="" /> | [UniFi&#160;Protect](serghome-unifi-protect/) | Экспериментальный пакет: нужны локальные образы и подготовка данных; на Intel — ARM-эмуляция и расширенные права. |
 
-UniFi Network и Protect устанавливаются как отдельные приложения; пакет не объединяет их в одну консоль.
+Network и Protect работают отдельно. Пакеты не являются официальными приложениями Umbrel, Scrypted или Ubiquiti.
 
-## Официальные продукты
+## Установка
 
-- [Scrypted — официальный сайт](https://www.scrypted.app/)
-- [UniFi Network — загрузки Ubiquiti](https://www.ui.com/download/unifi)
-- [UniFi Protect — загрузки Ubiquiti](https://www.ui.com/download/unifi-protect/)
+В Umbrel откройте **App Store → Community App Stores** и добавьте адрес:
 
-## Подключение магазина
+`https://github.com/Sergbmw/umbrel-home-apps`
 
-1. Откройте **App Store → Community App Stores** в Umbrel.
-2. Добавьте адрес `https://github.com/Sergbmw/umbrel-home-apps`.
-3. Выберите приложение в магазине. Перед установкой UniFi Network или Protect ознакомьтесь с конфигурацией пакета и подготовьте необходимые данные и образы.
-
-Добавление магазина само по себе не переносит данные существующих контейнеров. Перед переносом или обновлением сделайте резервную копию данных и проверьте возможность восстановления.
+Перенос существующих данных не выполняется автоматически.
 
 ## Обновления
 
-Umbrel предлагает обновление, когда в магазине опубликована новая версия пакета. Образы Scrypted и UniFi Network закреплены по версии и контрольной сумме: выход новой версии у разработчика сам по себе не обновляет этот репозиторий. Автоматическая публикация новых версий пока не настроена.
+Umbrel предлагает обновления после публикации новой версии в магазине. Автоматическая публикация новых версий пока не настроена. Protect обновляется отдельной пересборкой образа.
 
-UniFi Protect использует специально подготовленный локальный образ; обновление требует отдельной проверки и пересборки. Перед обновлением приложений сохраните резервную копию конфигурации и данных.
+## Официальные сайты
 
-## Поддержка
-
-Это личный магазин сообщества; совместимость с другими системами и восстановление данных не гарантированы. Описание каждого пакета и его параметры находятся в соответствующем каталоге.
+[umbrelOS](https://umbrel.com/umbrelos) · [Scrypted](https://www.scrypted.app/) · [UniFi Network](https://www.ui.com/download/unifi) · [UniFi Protect](https://www.ui.com/download/unifi-protect/)

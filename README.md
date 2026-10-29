@@ -6,11 +6,11 @@
 
 ## Приложения
 
-| Приложение | Назначение | Особенности |
-| --- | --- | --- |
-| <img src="https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png" width="28" height="28" alt="" />&nbsp;[Scrypted](serghome-scrypted/) | Камеры и домофоны в системе умного дома | Использует образ Scrypted и сеть хоста. |
-| <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png" width="28" height="28" alt="" />&nbsp;[UniFi&#160;Network](serghome-unifi-network/) | Управление устройствами сети UniFi | Пакет для переноса существующего контроллера; необходима подготовка конфигурации и базы данных. |
-| <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/png/unifi-protect.png" width="28" height="28" alt="" />&nbsp;[UniFi&#160;Protect](serghome-unifi-protect/) | Камеры и видеозаписи | Экспериментальный пакет для подготовленной установки: нужны локальные образы, перенос данных и сетевые настройки. На Intel используются ARM-эмуляция и контейнеры с расширенными правами. |
+| | Приложение | Назначение | Особенности |
+| --- | --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/koush/scrypted/main/install/icon.png" width="28" height="28" alt="" /> | [Scrypted](serghome-scrypted/) | Камеры и домофоны в системе умного дома | Использует образ Scrypted и сеть хоста. |
+| <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png" width="28" height="28" alt="" /> | [UniFi&#160;Network](serghome-unifi-network/) | Управление устройствами сети UniFi | Пакет для переноса существующего контроллера; необходима подготовка конфигурации и базы данных. |
+| <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/png/unifi-protect.png" width="28" height="28" alt="" /> | [UniFi&#160;Protect](serghome-unifi-protect/) | Камеры и видеозаписи | Экспериментальный пакет для подготовленной установки: нужны локальные образы, перенос данных и сетевые настройки. На Intel используются ARM-эмуляция и контейнеры с расширенными правами. |
 
 UniFi Network и Protect устанавливаются как отдельные приложения; пакет не объединяет их в одну консоль.
 

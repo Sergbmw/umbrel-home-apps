@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: serghome-unifi-network
 name: UniFi Network
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi.png
 tagline: Manage UniFi network devices
 category: networking
 version: "10.6.106"

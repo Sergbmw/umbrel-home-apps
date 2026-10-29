@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: serghome-unifi-protect
 name: UniFi Protect
+icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/unifi-protect.png
 tagline: Manage cameras and recordings
 category: automation
 version: "7.3.70"

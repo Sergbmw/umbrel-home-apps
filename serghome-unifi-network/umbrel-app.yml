@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: serghome-unifi-network
+name: UniFi Network
+tagline: Manage UniFi network devices
+category: networking
+version: "10.6.106"
+port: 18444
+requiresHttps: false
+description: >-
+  Migration package for an existing UniFi Network installation. Requires local
+  migration of configuration and database before installation. This runs
+  separately from UniFi Protect and does not merge their consoles.
+website: https://ui.com
+developer: Ubiquiti
+submitter: Sergey Home Apps
+submission: https://github.com/Sergbmw
+repo: https://github.com/linuxserver/docker-unifi-network-application
+support: https://docs.linuxserver.io/images/docker-unifi-network-application/
+gallery: []
+releaseNotes: >-
+  Initial migration package for the existing UniFi Network installation.
+dependencies: []

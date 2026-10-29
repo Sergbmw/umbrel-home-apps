@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: serghome-unifi-protect
+name: UniFi Protect
+tagline: Manage cameras and recordings
+category: automation
+version: "7.3.70"
+port: 17443
+requiresHttps: true
+description: >-
+  Unofficial package for a pre-existing UniFi Protect installation. Requires
+  locally prepared images in the host's loopback registry and a data migration.
+  ARM emulation and privileged containers are required on an Intel host.
+developer: Ubiquiti
+website: https://ui.com
+submitter: Sergey Home Apps
+submission: https://github.com/Sergbmw
+support: https://help.ui.com
+gallery: []
+releaseNotes: >-
+  Initial experimental package for a prepared local installation.
+dependencies: []

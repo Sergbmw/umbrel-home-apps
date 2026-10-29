@@ -1,0 +1,50 @@
+# Migration draft only: never start until data, networking and rollback are verified.
+services:
+  emulator:
+    image: 127.0.0.1:15000/protect-emulator:20261028@sha256:c228cd7f09161b995273db37c3ea7731b4235bb9814818b422acd9655f0a2c93
+    privileged: true
+    network_mode: none
+    volumes:
+      - /proc/sys/fs/binfmt_misc:/host-binfmt:ro
+    command: ["/bin/sh", "-ec", "if ! grep -qx enabled /host-binfmt/qemu-aarch64 2>/dev/null; then /usr/bin/binfmt --install arm64; fi; exec sleep infinity"]
+    healthcheck:
+      test: ["CMD-SHELL", "grep -qx enabled /host-binfmt/qemu-aarch64"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+  server:
+    image: 127.0.0.1:15000/unifi-protect:7.3.70-arm64-umbrel1@sha256:dc0c12e91872ea17b665572d58f41f252466378a5f078aa9e1052e19719433eb
+    platform: linux/arm64
+    cgroup: private
+    privileged: true
+    security_opt:
+      - apparmor:unconfined
+      - seccomp:unconfined
+      - label:disable
+    mem_limit: 5g
+    cpus: 3
+    hostname: UNVR
+    extra_hosts:
+      - "UNVR:127.0.1.1"
+    restart: unless-stopped
+    networks:
+      - lan
+      - setup
+    ports:
+      - "${PROTECT_BIND_IP:?Protect LAN address is required}:17443:443"
+      - "${PROTECT_BIND_IP:?Protect LAN address is required}:17080:80"
+    volumes:
+      - ${APP_DATA_DIR}/data/protect-data:/data
+      - ${APP_DATA_DIR}/data/protect-persistent:/persistent
+      - ${APP_DATA_DIR}/data/protect-srv:/srv
+    depends_on:
+      emulator:
+        condition: service_healthy
+
+networks:
+  lan:
+    driver: bridge
+  setup:
+    driver: bridge
+    internal: true

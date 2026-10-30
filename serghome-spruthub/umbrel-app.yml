@@ -7,8 +7,12 @@ category: automation
 version: "3.0.0"
 port: 17777
 description: >-
-  Migration package for an existing Sprut.hub installation. Requires a
-  preloaded local image, existing data volume and matching USB adapters.
+  Неофициальный пакет для переноса существующей установки Sprut.hub. ПО и
+  лицензия в пакет не входят: необходимы собственный образ и действующая
+  лицензия. Для Zigbee требуется совместимый координатор. Производитель
+  поддерживает фирменные стики Sprut; сторонние координаторы могут работать,
+  но не поддерживаются производителем. Запуск на Mac mini и в Docker
+  экспериментальный и не поддерживается Sprut.hub.
 developer: Sprut.hub
 website: https://spruthub.ru
 submitter: Sergey Home Apps

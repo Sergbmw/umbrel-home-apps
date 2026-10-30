@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: serghome-spruthub
+name: Sprut.hub
+tagline: Smart home controller
+icon: https://spruthub.ru/favicon.ico
+category: automation
+version: "3.0.0"
+port: 17777
+description: >-
+  Migration package for an existing Sprut.hub installation. Requires a
+  preloaded local image, existing data volume and matching USB adapters.
+developer: Sprut.hub
+website: https://spruthub.ru
+submitter: Sergey Home Apps
+submission: https://github.com/Sergbmw
+repo: https://spruthub.ru
+support: https://spruthub.ru
+gallery: []
+releaseNotes: >-
+  Draft for migration of an existing Sprut.hub installation.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
